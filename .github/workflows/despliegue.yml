@@ -2,6 +2,7 @@ name: comprobar script y preparar version
 
 on:
   push:
+  pull_request:
     branches:
       - main
   workflow_dispatch:    
@@ -29,4 +30,4 @@ jobs:
         with:
           name: version-preparada
           path: pruebas/index.php
-           if-no-files-foud:error
+          if-no-files-found: error
