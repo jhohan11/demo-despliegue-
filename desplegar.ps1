@@ -1,5 +1,5 @@
 param(
-    [string]$RutaPHP = php
+    [string]$RutaPHP = 'php'
 )
 
 $archivoOrigen = Join-Path $PSScriptRoot "origen\index.php"
